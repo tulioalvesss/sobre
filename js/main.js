@@ -38,6 +38,14 @@ function updateThemeIcon(theme, icon) {
 // Chama a função de setup quando o documento estiver carregado
 document.addEventListener('DOMContentLoaded', setupThemeToggle);
 
+// Efeito Parallax no hero-content
+window.addEventListener('scroll', () => {
+    const heroContent = document.querySelector('.hero-content');
+    const scrolled = window.pageYOffset;
+    heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+    heroContent.style.opacity = 1 - (scrolled * 0.003);
+});
+
 // Smooth scroll para links de navegação
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

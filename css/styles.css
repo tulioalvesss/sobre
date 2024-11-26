@@ -1,6 +1,7 @@
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #00ff9d;
+    --gradient-color: #00ff9d;
     --text-color: #ffffff;
     --background-color: #121212;
     --card-background: #1e1e1e;
@@ -12,6 +13,7 @@
 [data-theme="light"] {
     --primary-color: #ffffff;
     --secondary-color: #00cc7d;
+    --gradient-color: #fff;
     --text-color: #2d3436;
     --background-color: #f5f6fa;
     --card-background: #ffffff;
@@ -77,6 +79,19 @@ nav {
     padding: var(--section-padding);
     background: var(--primary-color);
     position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, 
+        var(--gradient-color) 0%,
+        transparent 70%);
+    opacity: 0.1;
 }
 
 .hero::before {
@@ -716,4 +731,3 @@ footer {
         font-size: 1.1rem;
     }
 }
-  
