@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulio Caio - Desenvolvedor Backend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="">
+    <header>
+        <nav>
+            <div class="logo">Tulio Caio</div>
+            <div class="nav-container">
+                <button id="theme-toggle" class="theme-toggle mb-2">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Desenvolvedor Web</h1>
+            <p>Transformando ideias em soluções robustas e escaláveis</p>
+            <div class="tech-stack">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Java</span>
+                <span>SQL</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+            <div class="skills"></div>
+                <div class="skill-tree">
+                    <section class="about-text">
+                        <p> Meu nome é Tulio Caio, sou um desenvolvedor web com experiência em PHP e Laravel.
+                            Atuo principalmente no desenvolvimento de sistemas web, mas também possuo experiência em automação de processos e desenvolvimento de APIs.</p>
+                        <p> Sou formado em Sistemas de Informação com ênfase em Desenvolvimento Web e atualmente trabalho como desenvolvedor full stack na <a href="https://www.unifei.edu.br/" target="_blank">UNIFEI</a>.</p>
+                        <p> Meu Trabalho de Conclusão de Curso foi intitulado "Análise de Pavimentos Através de Inteligência Artificial para Detecção de Problemas".
+                            Desenvolvi um sistema de análise automatizada de pavimentos utilizando Inteligência Artificial. O projeto envolveu a aplicação de redes neurais convolucionais (CNNs) e técnicas de processamento de imagens para identificar defeitos em vias pavimentadas.
+                            O sistema alcançou uma precisão de 95% em testes na detecção de pavimentos defeituosos.</p>
+                    </section>
+                    <h3 class="mt-5">Habilidades Técnicas</h3>
+                    <div class="folder">
+                        <i class="fas fa-folder-open"></i> Linguagens de Programação
+                        <div class="subfolder">
+                            <div class="file"><i class="fas fa-code"></i> PHP</div>
+                            <div class="file"><i class="fab fa-node-js"></i> Node.js</div>
+                            <div class="file"><i class="fab fa-python"></i> Python</div>
+                        </div>
+                    </div>
+                    <div class="folder">
+                        <i class="fas fa-folder-open"></i> Desenvolvimento Web
+                        <div class="subfolder">
+                            <div class="file"><i class="fab fa-html5"></i> HTML</div>
+                            <div class="file"><i class="fab fa-css3-alt"></i> CSS</div>
+                            <div class="file"><i class="fab fa-js"></i> JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="folder">
+                        <i class="fas fa-folder-open"></i> Banco de Dados
+                        <div class="subfolder">
+                            <div class="file"><i class="fas fa-database"></i> mySQL</div>
+                            <div class="file"><i class="fas fa-database"></i> PostgreSQL</div>
+                        </div>
+                    </div>
+                    <div class="folder">
+                        <i class="fas fa-folder-open"></i> Frameworks & Ferramentas
+                        <div class="subfolder">
+                            <div class="file"><i class="fab fa-laravel"></i> Laravel</div>
+                            <div class="file"><i class="fab fa-bootstrap"></i> Bootstrap & Tailwind</div>
+                            <div class="file"><i class="fab fa-js"></i> jQuery</div>
+                            <div class="file"><i class="fab fa-git-alt"></i> Git</div>
+                            <div class="file"><i class="fab fa-docker"></i> Docker</div>
+                        </div>
+                    </div>
+                    <div class="folder">
+                        <i class="fas fa-folder-open"></i> Outros
+                        <div class="subfolder">
+                            <div class="file"><i class="fas fa-cogs"></i> CI/CD</div>
+                            <div class="file"><i class="fas fa-cogs"></i> AWS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+            <!-- Projeto exemplo -->
+            <div class="project-card">
+                <h3>Gestão CPA</h3>
+                <p>Este sistema foi desenvolvido para a Universidade Federal de Itajubá (UNIFEI) e foi integrado à Comissão Própria de Avaliação, sendo responsável por gerenciar as atividades de avaliação de cursos, programas de pós-graduação stricto sensu, mestrados e doutorados. O sistema faz parte da integração da universidade com o Limesurvey, realizando todo o gerenciamento da ferramenta, que anteriormente permitia apenas a realização de questionários de forma manual e não automatizada.</p>
+                <p>O sistema cria automaticamente os questionários, segmentando-os por turmas, docentes, discentes e servidores.</p>
+                <p>Desenvolvido em PHP, o sistema utiliza o framework Laravel 8 e o banco de dados PostgreSQL. A ferramenta foi inteiramente desenvolvida por mim e integrada às hospedagens da UNIFEI.</p>
+                <p>O sistema é capaz de gerar questionários para todos os âmbitos de atuação da comissão e gerenciar as respostas dos avaliadores, sejam eles servidores, docentes e/ou discentes.</p>
+                <p>O sistema antigo não era amigável, apresentava falhas de funcionamento e arrecadava apenas cerca de 300 respostas. O novo sistema gerou aproximadamente 1850 questionários semestrais, acumulando mais de 5000 respostas.</p>
+                <div class="project-tech">
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>Sistema de login Auth</span>
+                    <span>Integração de API</span>
+                    <span>API Rest</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="project-links mt-3">
+                    <a href="https://github.com/tulioalvesss/limeAPILaravel7.4" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://gestaocpa.unifei.edu.br/" target="_blank" class="ms-2"><i class="fas fa-external-link-alt"></i> Site Oficial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- <div class="social-links">
+                <a href="https://github.com/tulioalvesss" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tulio-caio-freire-alves-896544206/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                 <a href="#" target="_blank"><i class="fas fa-envelope"></i></a> 
+            </div>-->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="footer-message">
+                <p>Obrigado por visitar meu portfólio! <i class="fas fa-heart heart-icon"></i></p>
+                <p>Se você chegou até aqui, espero que tenha gostado do meu trabalho.</p>
+                <p>Vamos <span>criar algo incrível</span> juntos?</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/tulioalvesss" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tulio-caio-freire-alves-896544206/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:seu-email@email.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Tulio Caio. Desenvolvido com <i class="fas fa-coffee"></i> e muito código. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
