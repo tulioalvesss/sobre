@@ -10,12 +10,13 @@ function setupThemeToggle() {
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
+        const themeText = document.getElementById('theme-text');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
         // Atualiza o tema
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        
+        themeText.textContent = newTheme === 'light' ? 'Light' : 'Dark';
         // Atualiza o ícone
         updateThemeIcon(newTheme, icon);
         
