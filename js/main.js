@@ -173,4 +173,39 @@ function setupSkillTree() {
 // Chama a função quando o documento estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
     setupSkillTree();
-}); 
+});
+
+// Adicione esta função ao seu main.js
+function setupTechStackAnimations() {
+    const techItems = document.querySelectorAll('.tech-stack span');
+    
+    // Adiciona listeners para hover
+    techItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.style.transform = 'translateY(-5px) scale(1.05)';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            item.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+
+    // Animação quando a seção entrar na viewport
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.querySelectorAll('span').forEach((span, index) => {
+                    setTimeout(() => {
+                        span.style.opacity = '1';
+                        span.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('.tech-stack'));
+}
+
+// Chame a função quando o documento estiver carregado
+document.addEventListener('DOMContentLoaded', setupTechStackAnimations); 

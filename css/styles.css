@@ -119,6 +119,53 @@ nav {
     border-radius: 20px;
     font-size: 0.9rem;
     border: 1px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+/* Delay para cada item aparecer sequencialmente */
+.tech-stack span:nth-child(1) { animation-delay: 0.1s; }
+.tech-stack span:nth-child(2) { animation-delay: 0.2s; }
+.tech-stack span:nth-child(3) { animation-delay: 0.3s; }
+.tech-stack span:nth-child(4) { animation-delay: 0.4s; }
+.tech-stack span:nth-child(5) { animation-delay: 0.5s; }
+.tech-stack span:nth-child(6) { animation-delay: 0.6s; }
+.tech-stack span:nth-child(7) { animation-delay: 0.7s; }
+.tech-stack span:nth-child(8) { animation-delay: 0.8s; }
+
+/* Efeito hover */
+.tech-stack span:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de pulso suave */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Adicione esta classe via JavaScript quando o elemento estiver visível */
+.tech-stack span.pulse {
+    animation: pulse 2s infinite;
 }
 
 /* Projetos */
